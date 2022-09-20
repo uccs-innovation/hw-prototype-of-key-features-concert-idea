@@ -1,8 +1,8 @@
-﻿using DXMauiApp2.Models;
-using DXMauiApp2.ViewModels;
+﻿using StudyN.Models;
+using StudyN.ViewModels;
 using System.Web;
 
-namespace DXMauiApp2.Services
+namespace StudyN.Services
 {
     public class NavigationService : INavigationService
     {

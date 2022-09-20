@@ -1,4 +1,4 @@
-﻿namespace DXMauiApp2.Services
+﻿namespace StudyN.Services
 {
     public interface IDataStore<T>
     {

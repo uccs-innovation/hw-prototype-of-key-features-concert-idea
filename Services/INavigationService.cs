@@ -1,6 +1,6 @@
-﻿using DXMauiApp2.ViewModels;
+﻿using StudyN.ViewModels;
 
-namespace DXMauiApp2.Services
+namespace StudyN.Services
 {
     public interface INavigationService
     {

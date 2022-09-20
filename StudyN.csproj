@@ -51,6 +51,25 @@
 		<PackageReference Include="DevExpress.Maui.DataGrid" Version="22.1.5" />
 		<PackageReference Include="DevExpress.Maui.Scheduler" Version="22.1.5" />
 	</ItemGroup>
+
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\EntryPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\IconView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ItemDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ItemsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NewItemPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
 	<PropertyGroup>
 		<UseInterpreter Condition="$(TargetFramework.Contains('-ios'))">True</UseInterpreter>	
 		<UseInterpreter Condition="$(TargetFramework.Contains('-android'))">False</UseInterpreter>

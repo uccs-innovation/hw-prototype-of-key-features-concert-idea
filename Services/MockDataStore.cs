@@ -1,6 +1,6 @@
-﻿using DXMauiApp2.Models;
+﻿using StudyN.Models;
 
-namespace DXMauiApp2.Services
+namespace StudyN.Services
 {
     public class MockDataStore : IDataStore<CalendarEvent>
     {
