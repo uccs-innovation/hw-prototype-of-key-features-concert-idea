@@ -50,15 +50,18 @@ namespace StudyN.ViewModels
             {
                 Items.Clear();
                 var items = DataStore.GetItems(true);
-                foreach (var item in items)
+                if (items != null && items.Count != 0)
                 {
-                    var it = new CalendarEvent
+                    foreach (var item in items)
                     {
-                        Name = item.Name,
-                        Description = item.Description,
-                        Id = item.Id
-                    };
-                    Items.Add(it);
+                        var it = new CalendarEvent
+                        {
+                            Name = item.Name,
+                            Description = item.Description,
+                            Id = item.Id
+                        };
+                        Items.Add(it);
+                    }
                 }
             }
             catch (Exception ex)
