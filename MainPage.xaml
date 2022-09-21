@@ -18,7 +18,7 @@
                   Route="StudyN.Views.EntryPage"/>
 
     <ShellContent Title="Calendar" Icon="scheduler"
-                  ContentTemplate="{DataTemplate local:CalendarView}" />
+                  ContentTemplate="{DataTemplate local:CalendarPage}" />
 
     <ShellContent Title="Task Manager" Icon="browse"
                   ContentTemplate="{DataTemplate local:ItemsPage}" />

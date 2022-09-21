@@ -3,6 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
              xmlns:local="clr-namespace:StudyN.Views"
-             x:Class="StudyN.Views.CalendarView">
+             x:Class="StudyN.Views.CalendarPage">
     <dxe:DXCalendar/>
 </ContentView>
