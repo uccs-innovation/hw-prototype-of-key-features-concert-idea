@@ -6,8 +6,6 @@ namespace StudyN.ViewModels
     public class ItemsViewModel : BaseViewModel
     {
         CalendarEvent _selectedItem;
-        Notification notification;
-
 
         public ItemsViewModel()
         {
@@ -37,15 +35,6 @@ namespace StudyN.ViewModels
             }
         }
 
-        public Notification Notification
-        {
-            get => notification;
-            set
-            {
-                SetProperty(ref notification, value);
-            }
-        }
-
         public void OnAppearing()
         {
             IsBusy = true;
@@ -62,10 +51,6 @@ namespace StudyN.ViewModels
                 var items = DataStore.GetItems(true);
                 if (items != null && items.Count() != 0)
                 {
-                    notification = new Notification
-                    {
-                        Text = string.Empty
-                    };
                     foreach (var item in items)
                     {
                         var it = new CalendarEvent
