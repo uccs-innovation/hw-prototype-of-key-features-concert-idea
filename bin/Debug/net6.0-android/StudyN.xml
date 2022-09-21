@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StudyN</name>
+    </assembly>
+    <members>
+        <member name="P:StudyN.Models.CalendarEvent.Id">
+            <summary>
+            The event identifier
+            </summary>
+        </member>
+        <member name="P:StudyN.Models.CalendarEvent.Name">
+            <summary>
+            The name of the event
+            </summary>
+        </member>
+        <member name="P:StudyN.Models.CalendarEvent.Description">
+            <summary>
+            The event's description/details
+            </summary>
+        </member>
+        <member name="P:StudyN.Models.CalendarEvent.Start">
+            <summary>
+            The start date and time of the event
+            </summary>
+        </member>
+        <member name="P:StudyN.Models.CalendarEvent.End">
+            <summary>
+            The end date and time of the event
+            </summary>
+        </member>
+        <member name="P:StudyN.Models.CalendarEvent.Completed">
+            <summary>
+            Event completed
+            </summary>
+        </member>
+        <member name="P:StudyN.Models.CalendarEvent.SubTasks">
+            <summary>
+            Sub-tasks of the event
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,81 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android;net6.0-ios</TargetFrameworks>
+    	<OutputType>Exe</OutputType>
+		<UseMaui>true</UseMaui>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SingleProject>true</SingleProject>
+		<RootNamespace>StudyN</RootNamespace>
+
+		<!-- Display name -->
+		<ApplicationTitle>StudyN</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.StudyN</ApplicationId>
+		<ApplicationIdGuid>F828E8F8-4628-49E1-9148-52FCCF512931</ApplicationIdGuid>
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiImage Include="Resources\appicon.svg" IsAppIcon="true" ForegroundFile="Resources\splashscreen.svg" Color="#FFFFFF" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\splashscreen.svg" Color="#5B27D9" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Resources\Images\about.svg" />
+	  <None Remove="Resources\Images\browse.svg" />
+	  <None Remove="Resources\Images\close.svg" />
+	  <None Remove="Resources\Images\logout.svg" />
+	  <None Remove="Resources\Images\scheduler.svg" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="DevExpress.Maui.Charts" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.CollectionView" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.Editors" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.Core" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.DataGrid" Version="22.1.5" />
+		<PackageReference Include="DevExpress.Maui.Scheduler" Version="22.1.5" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\EntryPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\IconView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ItemDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ItemsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NewItemPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+	<PropertyGroup>
+		<UseInterpreter Condition="$(TargetFramework.Contains('-ios'))">True</UseInterpreter>	
+		<UseInterpreter Condition="$(TargetFramework.Contains('-android'))">False</UseInterpreter>
+		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+</Project>

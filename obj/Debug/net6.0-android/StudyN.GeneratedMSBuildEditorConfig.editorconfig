@@ -1,0 +1,52 @@
+is_global = true
+build_property.TargetFramework = net6.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StudyN
+build_property.ProjectDir = /Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/Views/EntryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.Views.EntryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/EntryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/EntryPage.xaml
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/Views/IconView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.Views.IconView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/IconView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/IconView.xaml
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/Views/ItemDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.Views.ItemDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ItemDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ItemDetailPage.xaml
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/Views/ItemsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.Views.ItemsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ItemsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ItemsPage.xaml
+
+[/Users/josuetorresf2/Desktop/hw-prototype-of-key-features-concert-idea-master/Views/NewItemPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = StudyN.Views.NewItemPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/NewItemPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/NewItemPage.xaml
