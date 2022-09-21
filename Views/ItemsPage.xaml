@@ -20,14 +20,6 @@
             <dxcv:DXCollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                        <StackLayout Padding="18,20,10,01" x:DataType="model:Notification">
-                            <Label Text="{Binding Text}"
-                                       LineBreakMode="NoWrap"
-                                        Style="{DynamicResource ListItemTextStyle}"
-                                        FontFamily="Roboto"
-                                        FontSize="14"
-                                        TextColor="{StaticResource NormalText}"/>
-                        </StackLayout>
                             <StackLayout Padding="18,20,10,01" x:DataType="model:CalendarEvent">
                                 <Label Text="{Binding Name}"
                                         LineBreakMode="NoWrap"
