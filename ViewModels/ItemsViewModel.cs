@@ -49,7 +49,9 @@ namespace StudyN.ViewModels
             {
                 Items.Clear();
                 var items = DataStore.GetItems(true);
-                if (items != null && items.Count() != 0)
+
+                // Set default message when no calendar events are present
+                if (items != null && items.Any())
                 {
                     foreach (var item in items)
                     {
