@@ -8,15 +8,7 @@ namespace StudyN.Views
 		public CalendarPage()
 		{
 			InitializeComponent();
-			BindingContext = ViewModel = new CalendarViewModel();
-		}
-
-		CalendarViewModel ViewModel { get; }
-
-		protected override void OnAppearing()
-		{
-			base.OnAppearing();
-			ViewModel.OnAppearing();
+			BindingContext = new CalendarViewModel();
 		}
 
 	}

@@ -1,17 +1,13 @@
+using StudyN.Models;
+using System.Collections.ObjectModel;
 
-
-namespace StudyN.ViewModels;
-
-public class CalendarViewModel : BaseViewModel
+namespace StudyN.ViewModels
 {
-	public CalendarViewModel()
+	public class CalendarViewModel : BaseViewModel
 	{
-		Content = new VerticalStackLayout
+		public CalendarViewModel()
 		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
+			Title = "Calendar";
+		}
 	}
 }
