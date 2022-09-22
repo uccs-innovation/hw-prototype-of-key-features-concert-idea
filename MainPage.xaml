@@ -14,8 +14,7 @@
     <MenuItem Text="Close" IconImageSource="close" Clicked="OnCloseClicked"/>
 
     <ShellContent Title="Home" Icon="about"    
-                  ContentTemplate="{DataTemplate local:EntryPage}"
-                  Route="StudyN.Views.EntryPage"/>
+                  ContentTemplate="{DataTemplate local:EntryPage}"/>
 
     <ShellContent Title="Calendar" Icon="scheduler"
                   ContentTemplate="{DataTemplate local:CalendarPage}" />
@@ -23,7 +22,9 @@
     <ShellContent Title="Task Manager" Icon="browse"
                   ContentTemplate="{DataTemplate local:ItemsPage}" />
 
-    <MenuItem Text="Logout" IconImageSource="logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked"/>
+    <ShellContent Title="Logout" Icon="logout"
+                  ContentTemplate="{DataTemplate local:LoginPage}"
+                  Route="StudyN.Views.LoginPage"/>
 
     <!--<TabBar>
         <ShellContent Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}" />
